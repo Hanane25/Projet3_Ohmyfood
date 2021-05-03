@@ -1,0 +1,238 @@
+header {
+  width: 100%;
+  padding: 10px 0px;
+}
+header .website__logo {
+  text-align: center;
+}
+header .website__logo img {
+  width: 40%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+}
+
+.website__entete--form {
+  background-color: #e6e6e6;
+  align-items: baseline;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+}
+.website__entete--ville {
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
+}
+.website__entete--icone {
+  padding-left: 20px;
+}
+.website__entete--description {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.website__entete--description button {
+  color: white;
+  padding: 15px 20px;
+  background-color: #FF79DA;
+  box-shadow: 0px 4px 10px gray;
+  border-radius: 25px;
+  border: none;
+}
+
+.website__menu1 {
+  margin: 40px 10px;
+  position: relative;
+}
+.website__menu1 h1 {
+  margin-left: 10px;
+}
+.website__menu1--choix1 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.website__menu1--choix2 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.website__menu1--choix3 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.website__menu1 .fas {
+  margin-left: 30px;
+  margin-right: 20px;
+  color: gray;
+}
+.website__menu1--item {
+  width: 90%;
+  border: 1px #f3f3f3 solid;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  margin-left: 20px;
+  box-shadow: 5px 6px 10px #e6e6e6;
+  display: flex;
+  align-items: baseline;
+}
+.website__menu1--item p {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.website__menu1--number {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border: 1px #9356DC solid;
+  background-color: #9356DC;
+  border-radius: 50%;
+  margin-top: 20px;
+  padding: 3px 6px;
+  position: absolute;
+  left: 10px;
+}
+
+.website__menu2 {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.website__menu2 h1 {
+  margin-left: 20px;
+}
+.website__menu2--cart1 {
+  width: 90%;
+  margin: 0 auto;
+  border: 0px white solid;
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 15px;
+  position: relative;
+}
+.website__menu2--cart1 img {
+  width: 100%;
+  height: 170px;
+  border-radius: 5% 5% 0% 0%;
+  object-fit: cover;
+}
+.website__menu2--cart1--nouveau {
+  width: 20%;
+  font-size: 13px;
+  padding: 3px 4px;
+  text-align: center;
+  background-color: #99E2D0;
+  border: 1px #99E2D0 solid;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+}
+.website__menu2--cart2 {
+  width: 90%;
+  margin: 0 auto;
+  border: 0px white solid;
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
+.website__menu2--cart2 img {
+  width: 100%;
+  height: 170px;
+  border-radius: 5% 5% 0% 0%;
+  object-fit: cover;
+}
+.website__menu2--cart2--nouveau {
+  width: 20%;
+  font-size: 13px;
+  padding: 3px 0px;
+  text-align: center;
+  background-color: #99E2D0;
+  border: 1px #99E2D0 solid;
+  position: absolute;
+  top: 1090px;
+  left: 270px;
+}
+.website__menu2--cart3 {
+  width: 90%;
+  margin: 0 auto;
+  border: 0px white solid;
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
+.website__menu2--cart3 img {
+  width: 100%;
+  height: 170px;
+  border-radius: 5% 5% 0% 0%;
+  object-fit: cover;
+}
+.website__menu2--cart4 {
+  width: 90%;
+  margin: 0 auto;
+  border: 0px white solid;
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
+.website__menu2--cart4 img {
+  width: 100%;
+  height: 170px;
+  border-radius: 5% 5% 0% 0%;
+  object-fit: cover;
+}
+.website__menu2--description {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.website__menu2--titre {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.website__menu2--info {
+  font-size: 15px;
+  margin-top: 5px;
+}
+.website__menu2--heart {
+  font-size: 20px;
+}
+
+.website__foot {
+  background-color: #242424;
+  color: white;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+.website__foot--titre {
+  font-family: "Shrikhand";
+  margin-top: 0px;
+}
+.website__foot--nav {
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+.website__foot--nav .fas {
+  margin-right: 15px;
+}
+.website__foot--nav p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
