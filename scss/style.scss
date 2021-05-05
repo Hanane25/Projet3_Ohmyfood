@@ -48,7 +48,6 @@ body{
             
             color: white;
             padding: 15px 20px;
-            //background-color: $color-secondary;
             box-shadow: 0px 4px 10px gray;
             border-radius: 50px;
             border: none;
@@ -66,12 +65,21 @@ body{
 
 
 .website__menu1{
+    
     margin: 40px 10px;
     position: relative;
 
-    h1{
-        margin-left: 10px;
+    nav{
+        margin: 0px auto;
+        width: 90%;
     }
+
+    h1{
+        margin-left: 20px;
+        
+    }
+
+    
 
     &--choix1{
         display: flex;
@@ -132,10 +140,12 @@ body{
         margin-top: 20px;
         padding: 3px 6px;
         position: absolute;
-        left: 10px;
+        left: 7%;
         
     }
 }
+     
+
 
 .website__menu2{
     background-color: $backround-gray-light;
@@ -155,7 +165,8 @@ body{
         background-color: white;
         border-radius: 20px;
         margin-bottom: 15px;
-        
+        position: relative;
+
         a{
             color: black;
             text-decoration: none;
@@ -166,7 +177,7 @@ body{
             height: 170px;
             border-radius: 20px 20px 0% 0%;
             object-fit: cover;
-            position: relative;
+            
         }
 
         &--nouveau{
@@ -179,10 +190,8 @@ body{
             background-color: $color-tertiary;
             border: 1px $color-tertiary solid;
             position: absolute;
-            bottom: -8%;
-            left: 69%;
-            //top: 0px;
-            //left: 250px;
+            top: 0%;
+            left: 75%;
             
         }
     }
@@ -194,6 +203,7 @@ body{
         background-color: white;
         border-radius: 20px;
         margin-bottom: 15px;
+        position: relative;
 
         a{
             color: black;
@@ -205,7 +215,6 @@ body{
             height: 170px;
             border-radius: 20px 20px 0% 0%;
             object-fit: cover;
-            position: relative;
         }
         
         &--nouveau{
@@ -218,10 +227,8 @@ body{
             background-color: $color-tertiary;
             border: 1px $color-tertiary solid;
             position: absolute;
-            bottom: -40%;
-            left: 69%;
-            //top: 1090px;
-            //left: 270px;
+            top: 0%;
+            left: 75%;
             
         }
     }
@@ -295,12 +302,77 @@ body{
 
     &--heart:hover{
         background: linear-gradient($color-primary, $color-secondary);
-        //background-clip: text;
         color: transparent;
-       //-webkit-background-clip: text;
         transition: all 0.8s linear;
         font-weight: 800;
     }
 
 }
 
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .website__menu1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--number{
+            left: 11%;
+        }
+
+    nav{
+        margin: 0px auto;
+        width: 80%;
+      
+    }
+    }   
+}
+
+@media screen and (min-width: 768px){
+
+
+    .website__menu1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--number{
+            left: 33%;
+            padding: 6px 10px;
+            
+        }
+
+        &--item{
+            padding-top: 25px;
+            padding-left: 20%;
+            
+        }
+
+        nav{
+            margin: 0px auto;
+            width: 50%;
+        }
+    }
+
+    .website__menu2{
+        
+        h1{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        &--carts{
+            margin: 20px 20px;
+            display: flex;   
+        }
+        
+        &--cart1-2{
+            width: 50%;
+        }
+
+        &--cart3-4{
+            width: 50%;
+        }
+    }
+
+    
+}
