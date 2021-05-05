@@ -4,10 +4,11 @@
 
 @import "./partials/footer";
 
+@import "./partials/animations";
+
 
 body{
     font-family: 'Roboto', sans-serif;
-    
     margin: 0%;
 }
 
@@ -41,15 +42,22 @@ body{
         padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
+        
     
         button{
+            
             color: white;
             padding: 15px 20px;
-            background-color: $color-secondary;
+            //background-color: $color-secondary;
             box-shadow: 0px 4px 10px gray;
-            border-radius: 25px;
+            border-radius: 50px;
             border: none;
-           
+            background: linear-gradient($color-secondary, $color-primary);    
+            
+            &:hover{
+                background: linear-gradient($color-secondary 20%, $color-primary 100%);
+                box-shadow: 10px 10px 10px rgb(160, 160, 160);
+            }
         }
         
     }
@@ -90,7 +98,7 @@ body{
 
     &--item{
         width: 90%;
-        border: 1px $backround-gray-light solid;
+        border: 0px $backround-gray-light solid;
         background-color: $backround-gray-light;
         border-radius: 20px;
         margin-bottom: 20px;
@@ -99,6 +107,12 @@ body{
         box-shadow: 5px 6px 10px $backround-gray;
         display: flex;
         align-items: baseline;
+
+        &:hover{
+            background: #eee6f8;
+            //border: 5px #eee6f8 solid;
+            box-shadow: 10px 10px 10px $backround-gray;
+        }
 
         p{
             margin: 0px;
@@ -139,27 +153,36 @@ body{
         margin: 0 auto;
         border: 0px white solid;
         background-color: white;
-        border-radius: 5%;
+        border-radius: 20px;
         margin-bottom: 15px;
-        position: relative;
+        
+        a{
+            color: black;
+            text-decoration: none;
+        }
 
         img{
             width: 100%;
             height: 170px;
-            border-radius: 5% 5% 0% 0%;
+            border-radius: 20px 20px 0% 0%;
             object-fit: cover;
+            position: relative;
         }
 
         &--nouveau{
             width: 20%;
+            color: #16a072;
+            font-weight: bold;
             font-size: 13px;
-            padding: 3px 4px;
+            padding: 3px 0px;
             text-align: center;
             background-color: $color-tertiary;
             border: 1px $color-tertiary solid;
             position: absolute;
-            top: 0px;
-            left: 250px;
+            bottom: -8%;
+            left: 69%;
+            //top: 0px;
+            //left: 250px;
             
         }
     }
@@ -169,26 +192,36 @@ body{
         margin: 0 auto;
         border: 0px white solid;
         background-color: white;
-        border-radius: 5%;
+        border-radius: 20px;
         margin-bottom: 15px;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
 
         img{
             width: 100%;
             height: 170px;
-            border-radius: 5% 5% 0% 0%;
+            border-radius: 20px 20px 0% 0%;
             object-fit: cover;
+            position: relative;
         }
         
         &--nouveau{
             width: 20%;
+            color: #16a072;
+            font-weight: bold;
             font-size: 13px;
             padding: 3px 0px;
             text-align: center;
             background-color: $color-tertiary;
             border: 1px $color-tertiary solid;
             position: absolute;
-            top: 1090px;
-            left: 270px;
+            bottom: -40%;
+            left: 69%;
+            //top: 1090px;
+            //left: 270px;
             
         }
     }
@@ -198,13 +231,18 @@ body{
         margin: 0 auto;
         border: 0px white solid;
         background-color: white;
-        border-radius: 5%;
+        border-radius: 20px;
         margin-bottom: 15px;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
 
         img{
             width: 100%;
             height: 170px;
-            border-radius: 5% 5% 0% 0%;
+            border-radius: 20px 20px 0% 0%;
             object-fit: cover;
         }
     }
@@ -214,13 +252,18 @@ body{
         margin: 0 auto;
         border: 0px white solid;
         background-color: white;
-        border-radius: 5%;
+        border-radius: 20px;
         margin-bottom: 15px;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
 
         img{
             width: 100%;
             height: 170px;
-            border-radius: 5% 5% 0% 0%;
+            border-radius: 20px 20px 0% 0%;
             object-fit: cover;
         }
     }
@@ -231,6 +274,8 @@ body{
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+
+        
     }
 
     &--titre {
@@ -247,6 +292,15 @@ body{
     &--heart{
         font-size: 20px;
     } 
+
+    &--heart:hover{
+        background: linear-gradient($color-primary, $color-secondary);
+        //background-clip: text;
+        color: transparent;
+       //-webkit-background-clip: text;
+        transition: all 0.8s linear;
+        font-weight: 800;
+    }
 
 }
 

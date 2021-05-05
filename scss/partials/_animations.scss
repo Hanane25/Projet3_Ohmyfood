@@ -1,0 +1,51 @@
+
+//loading spinner
+
+.loading_spinner{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(white, #ffb4ea);
+    font-size: 60px;
+    color: $color-primary;
+    animation: disparition 6s linear;
+    animation-fill-mode: both;
+}
+
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    animation: loadingspinner 1.5s linear infinite;
+}
+
+@keyframes loadingspinner{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+
+.fa-spinner{
+    animation: disparition 6s linear ;
+    animation-fill-mode: both;
+}
+
+@keyframes disparition{
+    0%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

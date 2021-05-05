@@ -10,6 +10,76 @@ header .website__logo img {
   height: 100%;
 }
 
+.website__foot {
+  background-color: #242424;
+  color: white;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+.website__foot--titre {
+  font-family: "Shrikhand";
+  margin-top: 0px;
+}
+.website__foot--nav {
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+.website__foot--nav .fas {
+  margin-right: 15px;
+}
+.website__foot--nav p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.website__foot--nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.loading_spinner {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(white, #ffb4ea);
+  font-size: 60px;
+  color: #9356DC;
+  animation: disparition 6s linear;
+  animation-fill-mode: both;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  animation: loadingspinner 1.5s linear infinite;
+}
+
+@keyframes loadingspinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-spinner {
+  animation: disparition 6s linear;
+  animation-fill-mode: both;
+}
+
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0%;
@@ -41,10 +111,14 @@ body {
 .website__entete--description button {
   color: white;
   padding: 15px 20px;
-  background-color: #FF79DA;
   box-shadow: 0px 4px 10px gray;
-  border-radius: 25px;
+  border-radius: 50px;
   border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.website__entete--description button:hover {
+  background: linear-gradient(#FF79DA 20%, #9356DC 100%);
+  box-shadow: 10px 10px 10px #a0a0a0;
 }
 
 .website__menu1 {
@@ -76,7 +150,7 @@ body {
 }
 .website__menu1--item {
   width: 90%;
-  border: 1px #f3f3f3 solid;
+  border: 0px #f3f3f3 solid;
   background-color: #f3f3f3;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -85,6 +159,10 @@ body {
   box-shadow: 5px 6px 10px #e6e6e6;
   display: flex;
   align-items: baseline;
+}
+.website__menu1--item:hover {
+  background: #eee6f8;
+  box-shadow: 10px 10px 10px #e6e6e6;
 }
 .website__menu1--item p {
   margin: 0px;
@@ -119,64 +197,81 @@ body {
   margin: 0 auto;
   border: 0px white solid;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 20px;
   margin-bottom: 15px;
-  position: relative;
+}
+.website__menu2--cart1 a {
+  color: black;
+  text-decoration: none;
 }
 .website__menu2--cart1 img {
   width: 100%;
   height: 170px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 20px 20px 0% 0%;
   object-fit: cover;
+  position: relative;
 }
 .website__menu2--cart1--nouveau {
   width: 20%;
-  font-size: 13px;
-  padding: 3px 4px;
-  text-align: center;
-  background-color: #99E2D0;
-  border: 1px #99E2D0 solid;
-  position: absolute;
-  top: 0px;
-  left: 250px;
-}
-.website__menu2--cart2 {
-  width: 90%;
-  margin: 0 auto;
-  border: 0px white solid;
-  background-color: white;
-  border-radius: 5%;
-  margin-bottom: 15px;
-}
-.website__menu2--cart2 img {
-  width: 100%;
-  height: 170px;
-  border-radius: 5% 5% 0% 0%;
-  object-fit: cover;
-}
-.website__menu2--cart2--nouveau {
-  width: 20%;
+  color: #16a072;
+  font-weight: bold;
   font-size: 13px;
   padding: 3px 0px;
   text-align: center;
   background-color: #99E2D0;
   border: 1px #99E2D0 solid;
   position: absolute;
-  top: 1090px;
-  left: 270px;
+  bottom: -8%;
+  left: 69%;
+}
+.website__menu2--cart2 {
+  width: 90%;
+  margin: 0 auto;
+  border: 0px white solid;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.website__menu2--cart2 a {
+  color: black;
+  text-decoration: none;
+}
+.website__menu2--cart2 img {
+  width: 100%;
+  height: 170px;
+  border-radius: 20px 20px 0% 0%;
+  object-fit: cover;
+  position: relative;
+}
+.website__menu2--cart2--nouveau {
+  width: 20%;
+  color: #16a072;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 3px 0px;
+  text-align: center;
+  background-color: #99E2D0;
+  border: 1px #99E2D0 solid;
+  position: absolute;
+  bottom: -40%;
+  left: 69%;
 }
 .website__menu2--cart3 {
   width: 90%;
   margin: 0 auto;
   border: 0px white solid;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 20px;
   margin-bottom: 15px;
+}
+.website__menu2--cart3 a {
+  color: black;
+  text-decoration: none;
 }
 .website__menu2--cart3 img {
   width: 100%;
   height: 170px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 20px 20px 0% 0%;
   object-fit: cover;
 }
 .website__menu2--cart4 {
@@ -184,13 +279,17 @@ body {
   margin: 0 auto;
   border: 0px white solid;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 20px;
   margin-bottom: 15px;
+}
+.website__menu2--cart4 a {
+  color: black;
+  text-decoration: none;
 }
 .website__menu2--cart4 img {
   width: 100%;
   height: 170px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 20px 20px 0% 0%;
   object-fit: cover;
 }
 .website__menu2--description {
@@ -212,27 +311,11 @@ body {
 .website__menu2--heart {
   font-size: 20px;
 }
-
-.website__foot {
-  background-color: #242424;
-  color: white;
-  padding-top: 20px;
-  padding-left: 25px;
-}
-.website__foot--titre {
-  font-family: "Shrikhand";
-  margin-top: 0px;
-}
-.website__foot--nav {
-  font-size: 13px;
-  padding-bottom: 30px;
-}
-.website__foot--nav .fas {
-  margin-right: 15px;
-}
-.website__foot--nav p {
-  margin-bottom: 0px;
-  margin-top: 10px;
+.website__menu2--heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: transparent;
+  transition: all 0.8s linear;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=style.css.map */
