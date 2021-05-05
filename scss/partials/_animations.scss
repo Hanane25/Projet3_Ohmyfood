@@ -1,5 +1,5 @@
 
-//loading spinner
+//--- loading spinner
 
 .loading_spinner{
     position: fixed;
@@ -47,5 +47,17 @@
 
     100%{
         opacity: 0;
+    }
+}
+
+
+//--- coeur-coloré
+
+.website__menu2{
+    &--heart:hover{
+        background: linear-gradient($color-primary, $color-secondary);
+        color: transparent;
+        transition: all 0.8s linear;
+        font-weight: 800;
     }
 }

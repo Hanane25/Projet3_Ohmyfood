@@ -80,6 +80,13 @@ header .website__logo img {
     opacity: 0;
   }
 }
+.website__menu2--heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: transparent;
+  transition: all 0.8s linear;
+  font-weight: 800;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0%;
@@ -314,12 +321,6 @@ body {
 }
 .website__menu2--heart {
   font-size: 20px;
-}
-.website__menu2--heart:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  color: transparent;
-  transition: all 0.8s linear;
-  font-weight: 800;
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {

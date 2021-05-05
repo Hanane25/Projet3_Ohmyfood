@@ -4,22 +4,26 @@
 
 @import "./partials/footer1";
 
+@import "./partials/animation-menu";
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0%;
   }
 
 .website__entete{
-    img{
-        width: 100%;
-        position: relative;
+    p{ 
+    background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 222px;
+    margin-bottom: -6%;
     }
 }
 
 .website__menu{
     width: 100%;
-    position: absolute;
-    top: 35%;
     background-color: $backround-gray-light;
     border-radius: 30px 30px 0px 0px;
     padding-bottom: 40px;
@@ -85,18 +89,22 @@ body {
 }
 
 .website__commander{
-    margin-left: 80px;
-    margin: 50px 0px 20px 80px;
+    text-align: center;
     
     button{
         font-size: 20px;
         color: white;
-        border: 1px $color-secondary solid;
+        border: 0px $color-secondary solid;
         background-color: $color-secondary;
         border-radius: 30px;
         padding: 15px 50px;
         box-shadow: 0px 3px 12px gray;
-
+        background: linear-gradient($color-secondary, $color-primary);    
+            
+            &:hover{
+                background: linear-gradient($color-secondary 20%, $color-primary 100%);
+                box-shadow: 10px 10px 10px rgb(160, 160, 160);
+            }
 
 
     }

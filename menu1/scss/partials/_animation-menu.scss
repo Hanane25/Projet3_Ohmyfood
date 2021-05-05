@@ -1,0 +1,44 @@
+
+//--- coeur-coloré
+
+.website__menu{
+    &--titre-restaurant{
+        .fa-heart:hover{
+            background: linear-gradient($color-primary, $color-secondary);
+            color: transparent;
+            transition: all 0.8s linear;
+            font-weight: 800;
+        }
+    }
+   
+}
+
+//--- animation des plats
+
+.anim1{
+    animation: effect 1s linear;
+    animation-delay: 0.1s;  
+}
+
+.anim2{
+    animation: effect 1.2s linear;
+    animation-delay: 0.2s;
+}
+
+.anim3{
+    animation: effect 1.3s linear;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes effect{
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
