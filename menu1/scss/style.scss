@@ -72,6 +72,7 @@ body {
     }
 
     &--description{
+        width: 100%;
         display: flex;
         justify-content: space-between;
 
@@ -86,7 +87,26 @@ body {
     &--prix{
         font-weight: bold;
     }
+
+    &--circleanime{
+        text-align: center;
+        height: 100%;
+        width: 10%;
+        //background-color: $color-tertiary;
+        .circle{
+            color: $color-tertiary;
+            background-color: white;
+        }
+    }
+
+    &--desc-details{
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
+
+
 
 .website__commander{
     text-align: center;

@@ -42,3 +42,33 @@
         opacity: 1;
     }
 }
+
+//--- ajout des plats en cliquant dessus
+
+@keyframes circlerotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.circle{
+    //width: 0px;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.circle:hover{
+    animation: circlerotate 0.3s linear;
+}
+/*
+.website__menu{
+    &--circleanime{
+        width: 80px;
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+}*/
+
