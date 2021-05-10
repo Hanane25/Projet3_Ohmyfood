@@ -37,6 +37,9 @@ header .website__logo img {
 }
 
 .loading_spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   text-align: center;
   width: 100%;
@@ -50,9 +53,6 @@ header .website__logo img {
 }
 
 .spinner {
-  position: absolute;
-  top: 50%;
-  left: 40%;
   animation: loadingspinner 1.5s linear infinite;
 }
 
@@ -78,13 +78,33 @@ header .website__logo img {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
+.website__menu2--hearticone {
+  position: relative;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.website__menu2--heart {
+  position: absolute;
+}
 .website__menu2--heart:hover {
+  z-index: -1;
+  opacity: 0;
+}
+.website__menu2--heart-plein {
+  position: absolute;
+  z-index: 1;
   background: linear-gradient(#9356DC, #FF79DA);
-  color: transparent;
-  transition: all 0.8s linear;
-  font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.website__menu2--heart-plein:hover {
+  z-index: 1;
+  opacity: 1;
 }
 
 body {
@@ -199,6 +219,10 @@ body {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  /*
+      &--heart{
+          font-size: 25px;
+      } */
 }
 .website__menu2 h1 {
   margin-left: 20px;
@@ -318,9 +342,6 @@ body {
 .website__menu2--info {
   font-size: 15px;
   margin-top: 5px;
-}
-.website__menu2--heart {
-  font-size: 20px;
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {

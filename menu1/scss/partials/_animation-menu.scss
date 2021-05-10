@@ -1,17 +1,5 @@
 
-//--- coeur-coloré
 
-.website__menu{
-    &--titre-restaurant{
-        .fa-heart:hover{
-            background: linear-gradient($color-primary, $color-secondary);
-            color: transparent;
-            transition: all 0.8s linear;
-            font-weight: 800;
-        }
-    }
-   
-}
 
 //--- animation des plats
 
@@ -54,21 +42,77 @@
     }
 }
 
-.circle{
-    //width: 0px;
-    transition: 0.2s;
-    transition-timing-function: ease-out;
-}
-
 .circle:hover{
     animation: circlerotate 0.3s linear;
+    
 }
-/*
+
 .website__menu{
-    &--circleanime{
-        width: 80px;
-        transition: 0.3s;
-        transition-timing-function: ease-in;
+    &--cart{
+        &--validation{
+            transition: all 500ms ease-in-out;
+            width:min-content;
+            position: relative;
+            left: 30px;
+            &:hover{
+                transform: translateX(-50px);
+            }
+
+        }
+
+      
     }
-}*/
+    .fa-check-circle{
+
+        transition: all 500ms ease-in-out;
+
+    }
+
+}
+
+
+
+
+
+
+//--- coeur-coloré
+
+.website__menu{
+    
+
+    &--hearticone{
+        position: relative;
+        margin-right: 20px;
+        bottom: 20px;
+    
+    }
+
+    &--heart{
+        position: absolute;
+        &:hover{
+            z-index: -1;
+            opacity: 0;
+            
+        }
+        
+    }
+
+
+    &--heart-plein{
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+        &:hover{
+            z-index: 1;
+            opacity: 1;
+
+        }
+        
+    }
+
+}
 

@@ -44,13 +44,6 @@ header .website__logo img {
   text-decoration: none;
 }
 
-.website__menu--titre-restaurant .fa-heart:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  color: transparent;
-  transition: all 0.8s linear;
-  font-weight: 800;
-}
-
 .anim1 {
   animation: effect 1s linear;
   animation-delay: 0.1s;
@@ -84,23 +77,49 @@ header .website__logo img {
     transform: rotate(360deg);
   }
 }
-.circle {
-  transition: 0.2s;
-  transition-timing-function: ease-out;
-}
-
 .circle:hover {
   animation: circlerotate 0.3s linear;
 }
 
-/*
-.website__menu{
-    &--circleanime{
-        width: 80px;
-        transition: 0.3s;
-        transition-timing-function: ease-in;
-    }
-}*/
+.website__menu--cart--validation {
+  transition: all 500ms ease-in-out;
+  width: min-content;
+  position: relative;
+  left: 30px;
+}
+.website__menu--cart--validation:hover {
+  transform: translateX(-50px);
+}
+.website__menu .fa-check-circle {
+  transition: all 500ms ease-in-out;
+}
+
+.website__menu--hearticone {
+  position: relative;
+  margin-right: 20px;
+  bottom: 20px;
+}
+.website__menu--heart {
+  position: absolute;
+}
+.website__menu--heart:hover {
+  z-index: -1;
+  opacity: 0;
+}
+.website__menu--heart-plein {
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.website__menu--heart-plein:hover {
+  z-index: 1;
+  opacity: 1;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0%;
@@ -132,9 +151,6 @@ body {
 .website__menu--titre-restaurant h1 {
   margin: 0px;
 }
-.website__menu--titre-restaurant .far {
-  font-size: 30px;
-}
 .website__menu--titre {
   font-size: 19px;
   padding-bottom: 5px;
@@ -146,40 +162,77 @@ body {
   margin-bottom: 35px;
 }
 .website__menu--cart {
-  border: 0px gray solid;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px 15px;
+  width: 100%;
   margin-bottom: 15px;
-  box-shadow: 5px 5px 5px #e6e6e6;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  overflow: hidden;
 }
 .website__menu--cart p {
-  margin: 5px 0px;
+  width: 80%;
+  margin: 0px;
+}
+.website__menu--cart--desc-details {
+  width: 70%;
+  overflow: hidden;
+  background-color: white;
+  padding: 15px 0px 15px 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.website__menu--cart--validation {
+  width: 20%;
+  background-color: white;
+  padding: 15px 0px 15px 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-self: flex-start;
 }
 .website__menu--description {
+  padding-top: 5px;
+  font-size: 14px;
   width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
 .website__menu--titre-plat {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
+  overflow: hidden;
 }
 .website__menu--prix {
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: flex-end;
   font-weight: bold;
+  width: min-content;
+  height: auto;
+  margin: 0px 25px 20px 0px;
 }
 .website__menu--circleanime {
-  text-align: center;
-  height: 100%;
-  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  background: #99E2D0;
+  height: auto;
+  overflow: hidden;
 }
 .website__menu--circleanime .circle {
-  color: #99E2D0;
-  background-color: white;
-}
-.website__menu--desc-details {
-  display: flex;
-  justify-content: space-between;
+  color: white;
+  background-color: #99E2D0;
 }
 
 .website__commander {

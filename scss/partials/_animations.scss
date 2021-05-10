@@ -2,6 +2,9 @@
 //--- loading spinner
 
 .loading_spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -15,9 +18,6 @@
 }
 
 .spinner{
-    position: absolute;
-    top: 50%;
-    left: 40%;
     animation: loadingspinner 1.5s linear infinite;
 }
 
@@ -47,6 +47,7 @@
 
     100%{
         opacity: 0;
+        z-index: -1;
     }
 }
 
@@ -54,10 +55,39 @@
 //--- coeur-coloré
 
 .website__menu2{
-    &--heart:hover{
-        background: linear-gradient($color-primary, $color-secondary);
-        color: transparent;
-        transition: all 0.8s linear;
-        font-weight: 800;
+
+    &--hearticone{
+        position: relative;
+        font-size: 20px;
+        margin-right: 10px;
+    
     }
+
+    &--heart{ 
+        position: absolute;
+        &:hover{
+            z-index: -1;
+            opacity: 0;
+            
+        }
+    }
+    
+    
+
+    &--heart-plein{ 
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+        &:hover{
+            z-index: 1;
+            opacity: 1;
+
+        }
+    }
+
+    
 }
