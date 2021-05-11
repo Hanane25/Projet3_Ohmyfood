@@ -26,3 +26,25 @@
         }
     }
 }
+
+
+
+
+@media screen and (min-width: 500px){
+    .website__foot{
+        &--titre{
+            margin: 0px auto;
+            width: 50%;
+            font-size: 3em;
+            text-align: center;
+        }
+        
+        &--nav{
+            margin: 0px auto;
+            width: 70%;
+            text-align: center;
+            font-size: 0,8em;
+        }
+            
+    }
+}

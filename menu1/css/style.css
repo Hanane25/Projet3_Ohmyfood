@@ -44,6 +44,20 @@ header .website__logo img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 500px) {
+  .website__foot--titre {
+    margin: 0px auto;
+    width: 50%;
+    font-size: 3em;
+    text-align: center;
+  }
+  .website__foot--nav {
+    margin: 0px auto;
+    width: 70%;
+    text-align: center;
+    font-size: 0, 8em;
+  }
+}
 .anim1 {
   animation: effect 1s linear;
   animation-delay: 0.1s;
@@ -251,6 +265,37 @@ body {
 .website__commander button:hover {
   background: linear-gradient(#FF79DA 20%, #9356DC 100%);
   box-shadow: 10px 10px 10px #a0a0a0;
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .website__entete p {
+    height: 600px;
+    margin-bottom: -290px;
+  }
+
+  .website__menu--titre-restaurant {
+    margin: 0px auto;
+    width: 70%;
+  }
+  .website__menu--items {
+    margin: 0px auto;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .website__entete p {
+    height: 800px;
+    margin-bottom: -300px;
+  }
+
+  .website__menu--titre-restaurant {
+    margin: 0px auto;
+    width: 70%;
+  }
+  .website__menu--items {
+    margin: 0px auto;
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

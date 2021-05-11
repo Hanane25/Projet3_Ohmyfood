@@ -171,3 +171,47 @@ body {
     
 }
     
+
+
+@media screen and (min-width: 500px) and (max-width: 767px){
+    .website__entete{
+        p{
+            height: 600px;
+            margin-bottom: -290px;
+        }
+    }
+
+    .website__menu{
+        &--titre-restaurant{
+            margin: 0px auto;
+            width: 70%;
+        }
+
+        &--items{
+            margin: 0px auto;
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .website__entete{
+        p{
+            height: 800px;
+            margin-bottom: -300px;
+        }
+    }
+
+    .website__menu{
+        &--titre-restaurant{
+            margin: 0px auto;
+            width: 70%;
+        }
+
+        &--items{
+            margin: 0px auto;
+            width: 70%;
+        }
+    }
+}
+
