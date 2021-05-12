@@ -18,6 +18,17 @@ header .website__logo img {
   height: 100%;
 }
 
+@media screen and (min-width: 500px) {
+  header .website__logo {
+    position: relative;
+  }
+  header .website__logo .fas {
+    font-size: 30px;
+    position: absolute;
+    left: 80px;
+    top: 8px;
+  }
+}
 .website__foot {
   background-color: #242424;
   color: white;
@@ -45,6 +56,9 @@ header .website__logo img {
 }
 
 @media screen and (min-width: 500px) {
+  .website__foot {
+    padding-left: 0px;
+  }
   .website__foot--titre {
     margin: 0px auto;
     width: 50%;
@@ -99,6 +113,10 @@ header .website__logo img {
 }
 .website__menu--cart:hover--circleanime:hover {
   transform: translateX(-50px);
+  /*overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;*/
 }
 .website__menu--cart:hover .circle {
   animation: circlerotate 0.4s linear;
@@ -203,7 +221,19 @@ body {
 .website__menu--prix {
   align-self: flex-end;
 }
+.website__menu--description {
+  font-size: 0.9em;
+  /*overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;*/
+}
 
+/*
+.text{
+    width: 100%;
+
+}*/
 .website__commander {
   text-align: center;
 }

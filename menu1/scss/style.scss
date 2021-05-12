@@ -67,6 +67,7 @@ body {
             padding: 0px 30px 0px 20px;
             display: flex;
             justify-content: space-between; 
+
             
         }
     
@@ -96,10 +97,25 @@ body {
     &--prix{
         align-self: flex-end;   
     }
+
+    &--description{
+        font-size: 0.9em;
+        /*overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 90%;*/
+    
+        
+        
+    }
  
     
 }
-
+/*
+.text{
+    width: 100%;
+    
+}*/
 
 
 .website__commander{

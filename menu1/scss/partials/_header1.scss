@@ -25,3 +25,17 @@ header{
     
 }
 
+@media screen and (min-width: 500px){
+    header{
+        .website__logo{
+            position: relative;
+            .fas{
+                font-size: 30px;
+                position: absolute;
+                left: 80px;
+                top: 8px;
+            }
+        }
+    }
+    
+}
