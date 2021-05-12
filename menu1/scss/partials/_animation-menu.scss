@@ -33,22 +33,30 @@
 
 //--- ajout des plats en cliquant dessus
 
-@keyframes circlerotate{
-    from {
-        transform: rotate(0);
-    } 50% {
-        transform: rotate(180deg);
-    } to {
-        transform: rotate(360deg);
-    }
-}
-
-
-
 
 .website__menu{
     &--cart{
 
+        &:hover{
+            .website__menu--circleanime{
+                max-width: 60px;
+                .circle{
+                    transform: rotateZ(360deg)
+                }
+            }
+        }
+    }
+
+        &--circleanime{
+            transition: all 0.5s linear;
+            .circle{
+                transition: all 0.5s linear;
+            }
+        }
+
+
+
+        /*
         &:hover {
                 
             &--circleanime{
@@ -59,7 +67,7 @@
                     /*overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    width: 90%;*/
+                    width: 90%;
                 }
             }   
                 
@@ -70,7 +78,7 @@
     }
     .fa-check-circle{
         transition: all 500ms ease-in-out;
-    }      
+    } */     
 
 } 
 

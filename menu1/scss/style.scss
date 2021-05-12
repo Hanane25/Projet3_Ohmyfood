@@ -54,68 +54,73 @@ body {
         margin-bottom: 35px;
     }
 
+
     &--cart{
+        width: 95%;
+        margin: 20px auto;
         background-color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
         border-radius: 12px;
         box-shadow: 2px 3px 10px rgba(0,0,0,0.1);
-        margin: 20px 0;
-        display: flex;
+        overflow: hidden;
 
-    
         &--desc-details{
-            width: 100%;
-            padding: 0px 30px 0px 20px;
-            display: flex;
-            justify-content: space-between; 
+            width: 80%;
+            //padding: 10px;
+            margin: 15px 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            //flex: 1;
+        }
 
-            
-        }
-    
-        &--circleanime{
-            width: 0%;
-            right: 0;
-            //color: white;
-            background-color: $color-tertiary;
-            transform-origin: right center;
-            //transform: scale(0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
         
-        }
     }
 
-    
+    &--circleanime{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        max-width: 0;
+        overflow: hidden;
+        width: 30%;
+        background-color: $color-tertiary;
+        cursor: pointer;
+
+        .circle{
+            color: white;
+            font-size: 20px;
+        }
+    }   
 
     &--titre-plat{
         font-size: 15px;
         font-weight: bold;
-    }
-
-    
-    &--prix{
-        align-self: flex-end;   
+        margin: 0px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &--description{
+        margin: 0px;
         font-size: 0.9em;
-        /*overflow: hidden;
-        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
-        width: 90%;*/
-    
-        
+    }
+
+    &--prix{
+        width: 10%;
+        font-size: 0.9em;
+        //margin-left: 40%;
         
     }
- 
-    
+
+
 }
-/*
-.text{
-    width: 100%;
-    
-}*/
 
 
 .website__commander{
