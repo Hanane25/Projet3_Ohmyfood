@@ -1,0 +1,126 @@
+
+
+
+//--- animation des plats
+
+.anim1{
+    animation: effect 1s linear;
+    animation-delay: 0.1s;  
+}
+
+.anim2{
+    animation: effect 1.2s linear;
+    animation-delay: 0.2s;
+}
+
+.anim3{
+    animation: effect 1.3s linear;
+    animation-delay: 0.3s;
+}
+
+.anim4{
+    animation: effect 1.4s linear;
+    animation-delay: 0.4s;
+}
+
+
+@keyframes effect{
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+//--- ajout des plats en cliquant dessus
+
+@keyframes circlerotate{
+    from {
+        transform: rotate(0);
+    } 50% {
+        transform: rotate(180deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.website__menu{
+    &--cart{
+
+        &:hover {
+                
+            &--circleanime{
+                width: 25%;
+
+                &:hover{
+                    transform: translateX(-50px);
+                    /*overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 90%;*/
+                }
+            }   
+                
+            .circle {
+                animation: circlerotate 0.4s linear;
+            }
+        }
+    }
+    .fa-check-circle{
+        transition: all 500ms ease-in-out;
+    }      
+
+} 
+
+
+
+
+
+//--- coeur-coloré
+
+.website__menu{
+    
+
+    &--hearticone{
+        position: relative;
+        margin-right: 20px;
+        bottom: 20px;
+    
+    }
+
+    &--heart{
+        position: absolute;
+        &:hover{
+            z-index: -1;
+            opacity: 0;
+            
+        }
+        
+    }
+
+
+    &--heart-plein{
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+        &:hover{
+            z-index: 1;
+            opacity: 1;
+
+        }
+        
+    }
+
+}
+
