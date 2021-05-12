@@ -34,43 +34,41 @@
 //--- ajout des plats en cliquant dessus
 
 @keyframes circlerotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
+    from {
+        transform: rotate(0);
+    } 50% {
+        transform: rotate(180deg);
+    } to {
         transform: rotate(360deg);
     }
 }
 
-.circle:hover{
-    animation: circlerotate 0.3s linear;
-    
-}
+
+
 
 .website__menu{
     &--cart{
-        &--validation{
-            transition: all 500ms ease-in-out;
-            width:min-content;
-            position: relative;
-            left: 30px;
-            &:hover{
-                transform: translateX(-50px);
+
+        &:hover {
+                
+            &--circleanime{
+                width: 25%;
+
+                &:hover{
+                    transform: translateX(-50px);
+                }
+            }   
+                
+            .circle {
+                animation: circlerotate 0.4s linear;
             }
-
         }
-
-      
     }
     .fa-check-circle{
-
         transition: all 500ms ease-in-out;
+    }      
 
-    }
-
-}
-
-  
+} 
 
 
 

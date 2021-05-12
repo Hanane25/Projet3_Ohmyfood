@@ -55,94 +55,48 @@ body {
     }
 
     &--cart{
-        width: 100%;
-        margin-bottom: 15px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 2px 3px 10px rgba(0,0,0,0.1);
+        margin: 20px 0;
         display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        overflow:hidden;
 
-        p{
-            width: 80%;
-            margin:0px ;
-        }
-
+    
         &--desc-details{
-            width: 70%;
-            overflow: hidden;
-            background-color: white;
-            padding: 15px 0px 15px 15px;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            width: 100%;
+            padding: 0px 30px 0px 20px;
             display: flex;
-            overflow: hidden;
-            flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-between; 
             
         }
+    
+        &--circleanime{
+            width: 0%;
+            right: 0;
+            //color: white;
+            background-color: $color-tertiary;
+            transform-origin: right center;
+            //transform: scale(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
         
-        &--validation{
-            width: 20%;
-            background-color: white;
-            padding: 15px 0px 15px 15px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            display: flex;
-            justify-self: flex-start;
-            
-            
         }
     }
 
-    &--description{
-        padding-top: 5px;
-        font-size: 14px;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-
-    }
     
 
     &--titre-plat{
         font-size: 15px;
         font-weight: bold;
-        overflow: hidden;
-    }
-
-    &--prix{
-        width: 100%;
-        background-color: white;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        display:flex;
-        justify-content: center;
-        align-items:flex-start;
-        align-self: flex-end; 
-        font-weight: bold;
-        width: min-content;
-        height: auto;
-        margin: 0px 25px 20px 0px;
-        
-    }
-
-    &--circleanime{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 140px;
-        background: $color-tertiary;
-        height: auto;
-        overflow: hidden;
-        .circle{
-            color: white;
-            background-color: $color-tertiary;
-
-        }
     }
 
     
+    &--prix{
+        align-self: flex-end;   
+    }
+ 
     
 }
 
