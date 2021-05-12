@@ -97,31 +97,6 @@ header .website__logo img {
     opacity: 1;
   }
 }
-.website__menu {
-  /*
-      &:hover {
-
-          &--circleanime{
-              width: 25%;
-
-              &:hover{
-                  transform: translateX(-50px);
-                  /*overflow: hidden;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
-                  width: 90%;
-              }
-          }   
-
-          .circle {
-              animation: circlerotate 0.4s linear;
-          }
-      }
-  }
-  .fa-check-circle{
-      transition: all 500ms ease-in-out;
-  } */
-}
 .website__menu--cart:hover .website__menu--circleanime {
   max-width: 60px;
 }
