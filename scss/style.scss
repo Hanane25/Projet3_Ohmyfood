@@ -44,8 +44,10 @@ body{
         padding-right: 20px;
         
     
-        button{           //bouton couleur dégradé
-            
+        &--boutton{           //bouton couleur dégradé
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
             color: white;
             padding: 15px 20px;
             box-shadow: 0px 4px 10px gray;
