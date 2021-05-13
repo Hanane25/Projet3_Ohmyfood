@@ -44,7 +44,7 @@ body{
         padding-right: 20px;
         
     
-        button{
+        button{           //bouton couleur dégradé
             
             color: white;
             padding: 15px 20px;
@@ -118,7 +118,6 @@ body{
 
         &:hover{
             background: #eee6f8;
-            //border: 5px #eee6f8 solid;
             box-shadow: 10px 10px 10px $backround-gray;
         }
 
@@ -295,11 +294,6 @@ body{
         font-size: 15px;
         margin-top: 5px;
     }
-/*
-    &--heart{
-        font-size: 25px;
-    } */
-
     
 
 }

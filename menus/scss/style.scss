@@ -68,12 +68,10 @@ body {
 
         &--desc-details{
             width: 80%;
-            //padding: 10px;
             margin: 15px 10px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            //flex: 1;
         }
 
         
@@ -84,7 +82,7 @@ body {
         align-items: center;
         justify-content: center;
         height: 75px;
-        max-width: 0;
+        max-width: 0;                   //max-width animation check
         overflow: hidden;
         width: 30%;
         background-color: $color-tertiary;
@@ -101,8 +99,8 @@ body {
         font-weight: bold;
         margin: 0px;
         padding-bottom: 10px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        overflow: hidden;                  
+        text-overflow: ellipsis;                 // 3points de suspension
     }
 
     &--description{
@@ -115,8 +113,6 @@ body {
     &--prix{
         width: 10%;
         font-size: 0.9em;
-        //margin-left: 40%;
-        
     }
 
 
@@ -180,12 +176,16 @@ body {
     .website__menu{
         &--titre-restaurant{
             margin: 0px auto;
-            width: 70%;
+            width: 60%;
         }
 
         &--items{
             margin: 0px auto;
             width: 70%;
+        }
+
+        &--cart--desc-details{
+            width: 100%;
         }
     }
 }

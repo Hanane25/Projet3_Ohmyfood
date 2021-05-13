@@ -18,6 +18,11 @@
     animation-delay: 0.3s;
 }
 
+.anim4{
+    animation: effect 1.4s linear;
+    animation-delay: 0.4s;
+}
+
 
 @keyframes effect{
     0%{
@@ -63,6 +68,7 @@
     
 
     &--hearticone{
+        cursor: pointer;
         position: relative;
         margin-right: 20px;
         bottom: 20px;

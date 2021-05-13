@@ -102,35 +102,21 @@ header .website__logo img {
     opacity: 1;
   }
 }
-@keyframes circlerotate {
-  from {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.website__menu--cart:hover .website__menu--circleanime {
+  max-width: 60px;
 }
-.website__menu--cart:hover--circleanime {
-  width: 25%;
+.website__menu--cart:hover .website__menu--circleanime .circle {
+  transform: rotateZ(360deg);
 }
-.website__menu--cart:hover--circleanime:hover {
-  transform: translateX(-50px);
-  /*overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 90%;*/
+.website__menu--circleanime {
+  transition: all 0.5s linear;
 }
-.website__menu--cart:hover .circle {
-  animation: circlerotate 0.4s linear;
-}
-.website__menu .fa-check-circle {
-  transition: all 500ms ease-in-out;
+.website__menu--circleanime .circle {
+  transition: all 0.5s linear;
 }
 
 .website__menu--hearticone {
+  cursor: pointer;
   position: relative;
   margin-right: 20px;
   bottom: 20px;
@@ -162,7 +148,7 @@ body {
 }
 
 .website__entete p {
-  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -198,47 +184,57 @@ body {
   margin-bottom: 35px;
 }
 .website__menu--cart {
+  width: 95%;
+  margin: 20px auto;
   background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   border-radius: 12px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-  display: flex;
+  overflow: hidden;
 }
 .website__menu--cart--desc-details {
-  width: 100%;
-  padding: 0px 30px 0px 20px;
-  display: flex;
-  justify-content: space-between;
+  width: 80%;
+  margin: 15px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.website__menu--cart--circleanime {
-  width: 0%;
-  right: 0;
-  background-color: #99E2D0;
-  transform-origin: right center;
+.website__menu--circleanime {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 75px;
+  max-width: 0;
+  overflow: hidden;
+  width: 30%;
+  background-color: #99E2D0;
+  cursor: pointer;
+}
+.website__menu--circleanime .circle {
+  color: white;
+  font-size: 20px;
 }
 .website__menu--titre-plat {
   font-size: 15px;
   font-weight: bold;
-}
-.website__menu--prix {
-  align-self: flex-end;
+  margin: 0px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .website__menu--description {
+  margin: 0px;
   font-size: 0.9em;
-  /*overflow: hidden;
-  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
-  width: 90%;*/
+}
+.website__menu--prix {
+  width: 10%;
+  font-size: 0.9em;
 }
 
-/*
-.text{
-    width: 100%;
-
-}*/
 .website__commander {
   text-align: center;
 }
@@ -280,11 +276,14 @@ body {
 
   .website__menu--titre-restaurant {
     margin: 0px auto;
-    width: 70%;
+    width: 60%;
   }
   .website__menu--items {
     margin: 0px auto;
     width: 70%;
+  }
+  .website__menu--cart--desc-details {
+    width: 100%;
   }
 }
 
